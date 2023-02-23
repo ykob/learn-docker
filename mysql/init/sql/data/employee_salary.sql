@@ -237,3 +237,219 @@ SET employee_id = (SELECT id FROM employee where number = 'DEV-0003')
 , is_bonus = FALSE
 , transfered_at = '2022-12-25T09:00:00'
 ;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0001')
+, target_year_month = '202202'
+, payment_amount = 480000
+, is_bonus = FALSE
+, transfered_at = '2022-02-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0001')
+, target_year_month = '202203'
+, payment_amount = 480000
+, is_bonus = FALSE
+, transfered_at = '2022-03-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0001')
+, target_year_month = '202204'
+, payment_amount = 480000
+, is_bonus = FALSE
+, transfered_at = '2022-04-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0001')
+, target_year_month = '202205'
+, payment_amount = 480000
+, is_bonus = FALSE
+, transfered_at = '2022-05-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0001')
+, target_year_month = '202206'
+, payment_amount = 480000
+, is_bonus = FALSE
+, transfered_at = '2022-06-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0001')
+, target_year_month = '202207'
+, payment_amount = 480000
+, is_bonus = FALSE
+, transfered_at = '2022-07-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0001')
+, target_year_month = '202208'
+, payment_amount = 480000
+, is_bonus = FALSE
+, transfered_at = '2022-08-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0001')
+, target_year_month = '202209'
+, payment_amount = 540000
+, is_bonus = FALSE
+, transfered_at = '2022-09-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0001')
+, target_year_month = '202210'
+, payment_amount = 540000
+, is_bonus = FALSE
+, transfered_at = '2022-10-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0001')
+, target_year_month = '202211'
+, payment_amount = 540000
+, is_bonus = FALSE
+, transfered_at = '2022-11-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0001')
+, target_year_month = '202212'
+, payment_amount = 540000
+, is_bonus = FALSE
+, transfered_at = '2022-12-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0002')
+, target_year_month = '202204'
+, payment_amount = 330000
+, is_bonus = FALSE
+, transfered_at = '2022-04-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0002')
+, target_year_month = '202205'
+, payment_amount = 330000
+, is_bonus = FALSE
+, transfered_at = '2022-05-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0002')
+, target_year_month = '202206'
+, payment_amount = 330000
+, is_bonus = FALSE
+, transfered_at = '2022-06-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0002')
+, target_year_month = '202207'
+, payment_amount = 330000
+, is_bonus = FALSE
+, transfered_at = '2022-07-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0002')
+, target_year_month = '202208'
+, payment_amount = 330000
+, is_bonus = FALSE
+, transfered_at = '2022-08-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0002')
+, target_year_month = '202209'
+, payment_amount = 360000
+, is_bonus = FALSE
+, transfered_at = '2022-09-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0002')
+, target_year_month = '202210'
+, payment_amount = 360000
+, is_bonus = FALSE
+, transfered_at = '2022-10-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0002')
+, target_year_month = '202211'
+, payment_amount = 360000
+, is_bonus = FALSE
+, transfered_at = '2022-11-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0002')
+, target_year_month = '202212'
+, payment_amount = 360000
+, is_bonus = FALSE
+, transfered_at = '2022-12-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0003')
+, target_year_month = '202206'
+, payment_amount = 260000
+, is_bonus = FALSE
+, transfered_at = '2022-06-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0003')
+, target_year_month = '202207'
+, payment_amount = 260000
+, is_bonus = FALSE
+, transfered_at = '2022-07-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0003')
+, target_year_month = '202208'
+, payment_amount = 260000
+, is_bonus = FALSE
+, transfered_at = '2022-08-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0003')
+, target_year_month = '202209'
+, payment_amount = 260000
+, is_bonus = FALSE
+, transfered_at = '2022-09-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0003')
+, target_year_month = '202210'
+, payment_amount = 260000
+, is_bonus = FALSE
+, transfered_at = '2022-10-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0003')
+, target_year_month = '202211'
+, payment_amount = 260000
+, is_bonus = FALSE
+, transfered_at = '2022-11-25T09:00:00'
+;
+
+INSERT INTO employee_salary
+SET employee_id = (SELECT id FROM employee where number = 'SAL-0003')
+, target_year_month = '202212'
+, payment_amount = 260000
+, is_bonus = FALSE
+, transfered_at = '2022-12-25T09:00:00'
+;
