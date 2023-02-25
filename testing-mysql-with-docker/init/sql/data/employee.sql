@@ -1,7 +1,7 @@
 INSERT INTO employee
 SET number = 'DEV-0001',
 name = '佐藤 一郎',
-email = 'tanaka@sample.com',
+email = 'sato@sample.com',
 role = 'developer',
 position = 'manager',
 hire_date = '2022-01-01'
