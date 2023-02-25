@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     platform: linux/x86_64
-    container_name: my-mysql
+    container_name: testing-mysql-with-docker
     environment:
       MYSQL_ROOT_PASSWORD: root
       TZ: "Asia/Tokyo"
