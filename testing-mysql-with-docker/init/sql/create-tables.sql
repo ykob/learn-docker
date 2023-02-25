@@ -3,7 +3,7 @@ CREATE TABLE prefecture (
   name VARCHAR(20) NOT NULL,
   name_kana VARCHAR(20) NOT NULL,
   name_rome VARCHAR(40) NOT NULL,
-  create_at DATETIME(6) NOT NULL DEFAULT NOW(6),
+  created_at DATETIME(6) NOT NULL DEFAULT NOW(6),
   PRIMARY KEY (code)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -15,8 +15,8 @@ CREATE TABLE employee (
   role ENUM('developer', 'tester', 'sales', 'back-office') NOT NULL,
   position ENUM('chief', 'manager'),
   hire_date DATE NOT NULL,
-  create_at DATETIME(6) NOT NULL DEFAULT NOW(6),
-  update_at DATETIME(6) NOT NULL DEFAULT NOW(6) ON UPDATE NOW(6),
+  created_at DATETIME(6) NOT NULL DEFAULT NOW(6),
+  updated_at DATETIME(6) NOT NULL DEFAULT NOW(6) ON UPDATE NOW(6),
   PRIMARY KEY (id),
   UNIQUE KEY (number),
   UNIQUE KEY (email)
@@ -28,9 +28,9 @@ CREATE TABLE employee_address (
   city VARCHAR(50) NOT NULL,
   street VARCHAR(50) NOT NULL,
   building VARCHAR(50),
-  create_at DATETIME(6) NOT NULL DEFAULT NOW(6),
-  update_at DATETIME(6) NOT NULL DEFAULT NOW(6) ON UPDATE NOW(6),
-  PRIMARY KEY (emloyee_id),
+  created_at DATETIME(6) NOT NULL DEFAULT NOW(6),
+  updated_at DATETIME(6) NOT NULL DEFAULT NOW(6) ON UPDATE NOW(6),
+  PRIMARY KEY (employee_id),
   CONSTRAINT `fk__employee_address__employee_id` FOREIGN KEY (employee_id) REFERENCES employee (id),
   CONSTRAINT `fk__employee_address__prefecture_code` FOREIGN KEY (prefecture_code) REFERENCES prefecture (code)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -42,7 +42,7 @@ CREATE TABLE employee_salary (
   payment_amount INT NOT NULL,
   is_bonus BOOLEAN NOT NULL DEFAULT FALSE,
   transfered_at DATETIME(6),
-  create_at DATETIME(6) NOT NULL DEFAULT NOW(6),
+  created_at DATETIME(6) NOT NULL DEFAULT NOW(6),
   updated_at DATETIME(6) NOT NULL DEFAULT NOW(6) ON UPDATE NOW(6),
   PRIMARY KEY (id),
   CONSTRAINT `fk__employee_salary__employee_id` FOREIGN KEY (employee_id) REFERENCES employee (id)
