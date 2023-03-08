@@ -2,9 +2,10 @@ version: "3"
 
 services:
   php:
-    image: php:7.2-apache
+    build:
+      context: ./php
+      dockerfile: Dockerfile
     volumes:
-      - ./php/php.ini:/usr/local/etc/php/php.ini
       - ./php/src:/var/www/html
     ports:
       - 8000:80
