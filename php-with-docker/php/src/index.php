@@ -7,6 +7,9 @@
   <title>PHP with Docker</title>
 </head>
 <body>
-<?php phpinfo(); ?>
+  <h1>PHP with Docker</h1>
+  <?php
+    $mysql = mysqli_connect('localhost', 'test', 'test', 'test');
+  ?>
 </body>
 </html>
