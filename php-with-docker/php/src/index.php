@@ -9,7 +9,12 @@
 <body>
   <h1>PHP with Docker</h1>
   <?php
-    $mysql = mysqli_connect('localhost', 'test', 'test', 'test');
+    $mysqli = mysqli_connect('mysql', 'test', 'test', 'test');
+    mysqli_select_db($mysqli, 'test');
+    $data = mysqli_query($mysqli, 'SELECT name FROM person');
+
+    $row = mysqli_fetch_assoc($data);
+    echo $row['name'];
   ?>
 </body>
 </html>
