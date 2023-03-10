@@ -13,8 +13,9 @@
     mysqli_select_db($mysqli, 'test');
     $data = mysqli_query($mysqli, 'SELECT name FROM person');
 
-    $row = mysqli_fetch_assoc($data);
-    echo $row['name'];
+    while ($row = mysqli_fetch_assoc($data)) {
+      print '<p>'. $row['name']. '</p>';
+  }
   ?>
 </body>
 </html>
