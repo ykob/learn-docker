@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PHP with Docker</title>
-</head>
-<body>
 <?php
-  echo date('Y-m-d H:i:s');
+header('Content-Type: application/json; charset=UTF-8');
+
+$arr['start'] = date('Y-m-d H:i:s');
+$arr['end'] = date('Y-m-d H:i:s', strtotime('+1 hour'));
+
+print json_encode($arr, JSON_PRETTY_PRINT);
 ?>
-</body>
-</html>
