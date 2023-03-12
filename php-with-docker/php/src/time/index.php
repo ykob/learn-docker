@@ -7,7 +7,6 @@ $data = mysqli_query($mysqli, 'SELECT * FROM time');
 
 $arr['current'] = date('Y-m-d H:i:s');
 $row = mysqli_fetch_assoc($data);
-$arr['data'] = $row;
 
 if ($row['start'] != null && $row['end'] != null) {
   $stmt = mysqli_prepare($mysqli, 'UPDATE time SET current = ?');
