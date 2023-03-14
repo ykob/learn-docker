@@ -12,6 +12,7 @@ if ($row['start'] != null && $row['end'] != null) {
   $stmt = mysqli_prepare($mysqli, 'UPDATE time SET current = ?');
   mysqli_stmt_bind_param($stmt, 's', $arr['current']);
   mysqli_stmt_execute($stmt);
+  mysqli_stmt_close($stmt);
   $arr['start'] = $row['start'];
   $arr['end'] = $row['end'];
 } else {
@@ -20,6 +21,7 @@ if ($row['start'] != null && $row['end'] != null) {
   $stmt = mysqli_prepare($mysqli, 'UPDATE time SET start = ?, end = ?, current = ?');
   mysqli_stmt_bind_param($stmt, 'sss', $start, $end, $arr['current']);
   mysqli_stmt_execute($stmt);
+  mysqli_stmt_close($stmt);
   $arr['start'] = $start;
   $arr['end'] = $end;
 }
