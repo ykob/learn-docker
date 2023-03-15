@@ -26,5 +26,7 @@ if ($row['start'] != null && $row['end'] != null) {
   $arr['end'] = $end;
 }
 
+mysqli_close($mysqli);
+
 print json_encode($arr, JSON_PRETTY_PRINT);
 ?>
