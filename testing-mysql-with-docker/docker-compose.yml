@@ -9,8 +9,8 @@ services:
     container_name: testing-mysql-with-docker
     environment:
       MYSQL_ROOT_PASSWORD: root
-      TZ: "Asia/Tokyo"
+      TZ: Asia/Tokyo
     volumes:
       - ./init:/docker-entrypoint-initdb.d
     ports:
-      - "3306:3306"
+      - 3306:3306
