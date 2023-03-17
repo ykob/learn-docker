@@ -16,6 +16,8 @@
     while ($row = mysqli_fetch_assoc($data)) {
       print '<p>'. $row['name']. '</p>';
     }
+
+    mysqli_close($mysqli);
   ?>
 </body>
 </html>
