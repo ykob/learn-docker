@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 services:
   app:
     build:
@@ -30,3 +30,6 @@ services:
       TZ: Asia/Tokyo
     volumes:
       - mysql-volume:/var/lib/mysql
+
+volumes:
+  mysql-volume:
