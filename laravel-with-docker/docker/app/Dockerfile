@@ -7,7 +7,11 @@ RUN apt-get update && \
     docker-php-ext-install intl pdo_mysql zip bcmath
 
 COPY ./docker/app/php.ini /usr/local/etc/php/php.ini
-
+COPY ./src /app
 COPY --from=composer:2.0 /usr/bin/composer /usr/bin/composer
 
 WORKDIR /app
+
+RUN chmod o+w /app/storage/logs/
+RUN chmod o+w /app/storage/framework/sessions/
+RUN chmod o+w /app/storage/framework/views/
