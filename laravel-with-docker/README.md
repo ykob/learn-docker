@@ -12,3 +12,8 @@
 ### [Nginx Alpine](https://hub.docker.com/_/nginx)
 
 - [サーバ設定 Nginx - デプロイ 8.x Laravel](https://readouble.com/laravel/8.x/ja/deployment.html)
+
+
+## Laravel
+
+- [ディレクトリ構造 8.x Laravel](https://readouble.com/laravel/8.x/ja/structure.html)
