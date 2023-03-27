@@ -12,6 +12,6 @@ COPY --from=composer:2.0 /usr/bin/composer /usr/bin/composer
 
 WORKDIR /app
 
-RUN chmod o+w /app/storage/logs/
-RUN chmod o+w /app/storage/framework/sessions/
-RUN chmod o+w /app/storage/framework/views/
+RUN chmod o+w /app/storage/logs/ && \
+    chmod o+w /app/storage/framework/sessions/ && \
+    chmod o+w /app/storage/framework/views/
